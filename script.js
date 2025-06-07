@@ -36,7 +36,6 @@ fadeInElements.forEach(el => {
   
 
 
-/*newcode*/
 
 document.getElementById('readMoreBtn').addEventListener('click', function () {
     const moreText = document.getElementById('moreText');
@@ -51,7 +50,7 @@ document.getElementById('readMoreBtn').addEventListener('click', function () {
 
   
 
-  /* testimonials*/
+
 
 
   let currentSlide = 0;
@@ -74,11 +73,11 @@ prevBtn.addEventListener('click', () => {
   showSlide(currentSlide);
 });
 
-// Auto-slide (optional)
+
 setInterval(() => {
   currentSlide = (currentSlide + 1) % slides.length;
   showSlide(currentSlide);
-}, 7000); // every 7 seconds
+}, 7000); 
 
 
 // AOS Animate On Scroll Initialization
@@ -89,46 +88,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
- // EmailJS config
-// emailjs.init("5Kuy6dJawEBCYgOlw");
 
-// document.getElementById("contactForm").addEventListener("submit", function (e) {
-//   e.preventDefault();
 
-//   const btn = document.getElementById("submitBtn");
-//   const status = document.getElementById("formStatus");
-//   btn.classList.add("loading");
-//   status.textContent = "";
-
-//   const name = document.getElementById("name").value.trim();
-//   const email = document.getElementById("email").value.trim();
-//   const message = document.getElementById("message").value.trim();
-
-//   if (!name || !email || !message) {
-//     status.textContent = "Please fill out all fields.";
-//     btn.classList.remove("loading");
-//     return;
-//   }
-
-//   const params = {
-//     name: name,
-//     email: email,
-//     message: message,
-//   };
-
-//   emailjs
-//     .send("service_ktom60v", "template_sz2fh1f", params)
-//     .then(() => {
-//       status.textContent = "Message sent successfully!";
-//       btn.classList.remove("loading");
-//       document.getElementById("contactForm").reset();
-//     })
-//     .catch((err) => {
-//       console.error("EmailJS Error:", err);
-//       status.textContent = "Something went wrong. Try again.";
-//       btn.classList.remove("loading");
-//     });
-// });
 
 
 /* header*/// Wait for DOM
