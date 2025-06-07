@@ -47,7 +47,7 @@
 }
 
 .navbar .logo img {
-  height: 70px;
+  height: 80px;
   width: 120px;
 }
 
@@ -294,6 +294,7 @@
   
   .about {
     display: flex;
+    /* width: 100%; */
     justify-content: space-between;
     align-items: center;
     padding: 4rem 0;
@@ -306,7 +307,10 @@
   
   .about-img img {
     width: 100%;
+    min-width: 500px;
+    height: auto;
     border-radius: 8px;
+    
   }
   
   .about-content {
@@ -321,14 +325,15 @@
   .about-text .hidden {
     display: none;
   }
+
+ 
   
-  
-  .rating-box {
+  /* .rating-box {
     margin-top: 1rem;
     font-size: 1.2rem;
     color: #fa4b2a;
     font-weight: bold;
-  }
+  } */
 
 
  
@@ -355,6 +360,7 @@
   
   .service-card:hover {
     transform: translateY(-10px);
+    color: white;
   }
   
   .service-card::before {
@@ -385,6 +391,10 @@
     color: #ff5722;
     margin-bottom: 1rem;
   }
+  .card-content:hover .icon{
+    color: white;
+  }
+  
   
   .service-card h3 {
     font-size: 1.2rem;
@@ -395,6 +405,10 @@
     font-size: 0.95rem;
     color: #333;
   }
+
+   .service-card:hover p {
+    color: white;
+   }
   
   .section-title {
     font-size: 2.5rem;
