@@ -12,7 +12,7 @@
     background-color: white;
     color: #333;
     overflow-x: hidden;
-    visibility: hidden;
+    /* visibility: hidden; */
     width: 100%;
   }
   
