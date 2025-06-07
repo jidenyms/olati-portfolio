@@ -6,18 +6,24 @@
     padding: 0;
     font-family: Arial, sans-serif;
   }
-  
+
   body {
     line-height: 1.6;
     background-color: white;
     color: #333;
+    overflow-x: hidden;
+    visibility: hidden;
+    width: 100%;
   }
   
   .container {
     width: 90%;
     max-width: 1200px;
     margin: auto;
-  }/* Top Bar */
+  }
+
+  /* Top Bar */
+
 .top-bar {
   background-image: url(/images/6528184189a92dc434a188c6_Simple\ Services\ Banner.png);
   color: white;
@@ -137,7 +143,7 @@
   top: 0;
   left: 0;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background: rgba(0, 0, 0, 0.9);
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
@@ -191,6 +197,9 @@
   .menu-toggle {
     display: block;
     color: #000;
+  }
+  .top-bar{
+    color: white;
   }
 }
 
@@ -396,50 +405,6 @@
     letter-spacing: 2px;
   }
 
-  /* .services-section {
-    background-color: #eef1f5;
-    padding: 3rem 0;
-    background-image: url(/images/6528184189a92dc434a188c6_Simple\ Services\ Banner.png);
-    background-repeat:repeat-x;
-    background-position: center;
-    
-  } */
-  
-/*   
-  
-  
-  .services-section h3 {
-    text-align: center;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-  } */
-/*   
-  .service-cards {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 2rem;
-  }
-  
-  .service-card {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    flex: 1 1 calc(25% - 2rem);
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
-    text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: #333;
-    background-color: rgba(255,255,255,0.25);
-  }
-  
-  .service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-  } */
   
   .footer {
     background-image: url(/images/652ac2c6e3e8f97337bd9e72_Upcoming\ Bg.png);
@@ -660,19 +625,7 @@
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
   }
   
-/*   
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-  
-  form input, form textarea {
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  } */
+
   
   @media (max-width: 768px) {
     .hero {
@@ -834,4 +787,17 @@
 
 .slider-controls button:hover {
   background-color: #d63c1a;
+}
+
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    padding: 1rem;
+  }
+
+  .contact-form,
+  .map-container {
+    min-width: 100% !important;
+  }
 }
