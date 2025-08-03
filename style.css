@@ -175,6 +175,7 @@
   padding: 12px 0;
   width: 100%;
   border-radius: 6px;
+ 
 }
 
 /* Close Button */
@@ -414,7 +415,7 @@
 
   
   .footer {
-    background-image: url(/images/652ac2c6e3e8f97337bd9e72_Upcoming\ Bg.png);
+    background-color:#103C3B;
     background-position: center;
     background-repeat: no-repeat;
     color: white;
