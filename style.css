@@ -419,7 +419,7 @@ a {
 
   
   .footer {
-    background-color:(16, 60, 59, 0.95);
+    background-color:rgba(16, 60, 59, 0.95);
     background-position: center;
     background-repeat: no-repeat;
     color: white;
