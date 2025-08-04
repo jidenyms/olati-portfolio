@@ -100,7 +100,7 @@ a {
   transition: color 0.3s ease;
   z-index: 1;
 }
-/* 
+
 .hire-me-btn::before {
   content: '';
   position: absolute;
@@ -113,13 +113,16 @@ a {
   transition: height 0.3s ease;
 }
 
-.hire-me-btn:hover::before {
-  height: 100%;
-}
+/* Only apply hover styles on devices wider than 768px */
+@media (min-width: 768px) {
+  .hire-me-btn:hover::before {
+    height: 100%;
+  }
 
-.hire-me-btn:hover {
-  color: #000;
-} */
+  .hire-me-btn:hover {
+    color: #000;
+  }
+}
 
 
 
