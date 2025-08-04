@@ -334,63 +334,13 @@ a {
  
   
 
- .services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  padding: 3rem 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  background-image: url(/images/6528184189a92dc434a188c6_Simple\ Services\ Banner.png);
-  background-position: center;
-  background-repeat: repeat;
-}
-
-.service-card {
+ .service-card {
   position: relative;
   background-color: #f9f9f9;
   border-radius: 1rem;
   overflow: hidden;
   transition: transform 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Hover effect on desktop */
-@media (min-width: 768px) {
-  .service-card:hover {
-    transform: translateY(-10px);
-    color: white;
-  }
-
-  .service-card:hover::before {
-    bottom: 0;
-  }
-
-  .service-card:hover .icon {
-    color: white;
-  }
-
-  .service-card:hover p {
-    color: white;
-  }
-}
-
-/* Scroll-based effect for mobile */
-.service-card.in-view {
-  transform: translateY(-10px);
-  color: white;
-}
-
-.service-card.in-view::before {
-  bottom: 0;
-}
-
-.service-card.in-view .icon {
-  color: white;
-}
-
-.service-card.in-view p {
-  color: white;
 }
 
 .service-card::before {
@@ -435,6 +385,26 @@ a {
   color: #103C3B;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+/* Hover effects only on desktop */
+@media (min-width: 768px) {
+  .service-card:hover {
+    transform: translateY(-10px);
+    color: white;
+  }
+
+  .service-card:hover::before {
+    bottom: 0;
+  }
+
+  .card-content:hover .icon {
+    color: white;
+  }
+
+  .service-card:hover p {
+    color: white;
+  }
 }
 
 
