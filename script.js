@@ -163,3 +163,26 @@ document.addEventListener("DOMContentLoaded", function () {
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 };
+
+document.addEventListener("DOMContentLoaded", function () {
+  const cards = document.querySelectorAll('.service-card');
+
+  if (window.innerWidth < 768) {
+    const observer = new IntersectionObserver((entries) => {
+      // Remove class from all cards
+      cards.forEach(card => card.classList.remove('in-view'));
+
+      // Add to the first visible one only
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+        }
+      });
+    }, {
+      threshold: 0.6,
+    });
+
+    cards.forEach(card => observer.observe(card));
+  }
+});
+
